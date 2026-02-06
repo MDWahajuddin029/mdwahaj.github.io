@@ -1,256 +1,214 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>MD Wahajuddin | Automobile Engineer</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Md Wahajuddin | Automobile Engineer</title>
+    <style>
+        :root {
+            --primary: #2c3e50;
+            --secondary: #e67e22;
+            --light: #ecf0f1;
+            --dark: #34495e;
+            --text: #333;
+        }
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text);
+            margin: 0;
+            padding: 0;
+            background-color: #f4f7f6;
+        }
 
-<style>
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+        header {
+            background: var(--primary);
+            color: white;
+            padding: 4rem 2rem;
+            text-align: center;
+        }
 
-body {
-    font-family: 'Poppins', sans-serif;
-    background: #0b1120;
-    color: #e5e7eb;
-    line-height: 1.7;
-}
+        nav {
+            background: var(--dark);
+            padding: 1rem;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            text-align: center;
+        }
 
-/* HERO */
-.hero {
-    background: linear-gradient(to right, #020617dd, #020617dd),
-    url("https://images.unsplash.com/photo-1503376780353-7e6692767b70") center/cover;
-    padding: 120px 8%;
-}
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
 
-.hero h1 {
-    font-size: 3rem;
-    color: #38bdf8;
-}
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            padding: 2rem;
+        }
 
-.hero h3 {
-    font-weight: 400;
-    margin-top: 10px;
-}
+        section {
+            background: white;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
 
-.hero p {
-    max-width: 600px;
-    margin-top: 20px;
-    color: #cbd5f5;
-}
+        h2 {
+            color: var(--primary);
+            border-bottom: 3px solid var(--secondary);
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
 
-/* SECTION */
-section {
-    padding: 80px 8%;
-}
+        .job, .project {
+            margin-bottom: 1.5rem;
+        }
 
-.section-title {
-    text-align: center;
-    margin-bottom: 50px;
-}
+        .job-title, .project-title {
+            font-weight: bold;
+            font-size: 1.2rem;
+            color: var(--dark);
+        }
 
-.section-title h2 {
-    font-size: 2.3rem;
-    color: #38bdf8;
-}
+        .date {
+            color: var(--secondary);
+            font-style: italic;
+            margin-bottom: 10px;
+            display: block;
+        }
 
-/* ABOUT */
-.about {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 40px;
-    align-items: center;
-}
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 10px;
+        }
 
-.about img {
-    width: 100%;
-    border-radius: 20px;
-}
+        .skill-tag {
+            background: var(--light);
+            padding: 8px;
+            border-radius: 4px;
+            text-align: center;
+            font-size: 0.9rem;
+            border: 1px solid #ddd;
+        }
 
-/* CARDS */
-.cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 30px;
-}
+        .footer {
+            text-align: center;
+            padding: 2rem;
+            background: var(--primary);
+            color: white;
+        }
 
-.card {
-    background: #020617;
-    border-radius: 16px;
-    overflow: hidden;
-    box-shadow: 0 0 25px rgba(56,189,248,0.15);
-    transition: 0.3s;
-}
-
-.card:hover {
-    transform: translateY(-10px);
-}
-
-.card img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-}
-
-.card-content {
-    padding: 25px;
-}
-
-.card-content h3 {
-    color: #38bdf8;
-}
-
-/* SKILLS */
-.skills span {
-    display: inline-block;
-    background: #020617;
-    padding: 10px 16px;
-    margin: 8px;
-    border-radius: 30px;
-    border: 1px solid #38bdf8;
-}
-
-/* FOOTER */
-footer {
-    background: #020617;
-    text-align: center;
-    padding: 25px;
-    color: #94a3b8;
-    font-size: 0.9rem;
-}
-</style>
+        @media (max-width: 600px) {
+            nav a { display: block; margin: 10px 0; }
+        }
+    </style>
 </head>
-
 <body>
 
-<!-- HERO -->
-<div class="hero">
-    <h1>MD Wahajuddin</h1>
-    <h3>Automobile Engineer | Automotive Technology Enthusiast</h3>
-    <p>
-        Results-driven Automobile Engineer with hands-on experience in vehicle design,
-        manufacturing, steering systems, DOE optimization, and electric ATV development.
-    </p>
+<header>
+    <h1>Md Wahajuddin</h1>
+    <p>Automobile Engineer | Design & Manufacturing Enthusiast</p>
+    <p>Hyderabad, Telangana | +91-9100-548-995 | wahajivan@gmail.com</p>
+</header>
+
+<nav>
+    <a href="#about">About</a>
+    <a href="#experience">Experience</a>
+    <a href="#projects">Projects</a>
+    <a href="#education">Education</a>
+    <a href="#skills">Skills</a>
+</nav>
+
+<div class="container">
+    <section id="about">
+        <h2>Professional Summary</h2>
+        <p>Highly motivated and analytical Automobile Engineer with a strong foundation in design, analysis, and manufacturing[cite: 4]. Proven ability to optimize complex processes and collaborate effectively within multidisciplinary teams[cite: 5]. Eager to leverage technical expertise and problem-solving skills in a fast-paced and innovative environment[cite: 6].</p>
+    </section>
+
+    <section id="experience">
+        <h2>Professional Experience</h2>
+        
+        <div class="job">
+            <span class="job-title">Automotive Engineer - J&A Detailing Studio</span>
+            <span class="date">August 2022 – Present</span>
+            <ul>
+                <li>Responsible for Car Service and high-end Car Detailing operations.</li>
+                <li>Consistently recognized for practical understanding of work requirements and result-oriented performance[cite: 88, 89].</li>
+            </ul>
+        </div>
+
+        <div class="job">
+            <span class="job-title">Manager - Sunrise Rubber Products and Tyre Works</span>
+            <span class="date">Nov 2018 - June 2022</span>
+            <ul>
+                <li>Managed material handling, including feeding buffed casings and uncured tread rubber into two-roll mills[cite: 50].</li>
+                <li>Operated machinery to control rubber sheet thickness and pre-heated casings for improved adhesion[cite: 51, 53].</li>
+                <li>Optimized cooling processes to prevent premature curing of rubber compounds[cite: 57].</li>
+            </ul>
+        </div>
+
+        <div class="job">
+            <span class="job-title">Creative Writing Intern - Aashman Foundation</span>
+            <span class="date">June 2020 - Sep 2020</span>
+            <ul>
+                <li>Developed critical analysis and feedback skills through creative writing workshops[cite: 63].</li>
+                <li>Collaborated with a team of writers to provide constructive feedback and improve projects[cite: 65].</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Key Projects</h2>
+        
+        <div class="project">
+            <span class="project-title">Steering Team Member - e-BAJA SAEINDIA</span>
+            <span class="date">2021-2022</span>
+            <p>Played a pivotal role in the design, fabrication, and optimization of a vehicle steering system for the national competition[cite: 36]. Conducted rigorous static and dynamic testing to evaluate durability and handling[cite: 40].</p>
+        </div>
+
+        <div class="project">
+            <span class="project-title">Optimization of Process Parameters: Inconel 718</span>
+            <span class="date">2021-2022</span>
+            <p>Used Design of Experiments (DOE) to systematically explore how cutting speed and feed rate affect surface roughness and tool wear in high-performance aerospace alloys[cite: 17, 20].</p>
+        </div>
+    </section>
+
+    <section id="education">
+        <h2>Education & Certifications</h2>
+        <p><strong>B.E. in Automobile Engineering</strong> - MVSR Engineering College (2018-2022) [cite: 12, 13, 15]</p>
+        <ul>
+            <li><strong>SAEINDIA Member:</strong> Membership Number 7210423276[cite: 8].</li>
+            <li><strong>Duolingo English Test:</strong> Scored 120/160[cite: 9].</li>
+            <li><strong>Java Introduction:</strong> Certified by LearnTube by CareerNinja[cite: 10].</li>
+            <li><strong>Sports:</strong> Participant in the Padma Bhushan Dr. B V Raju Memorial State Level Volleyball Tournament (2019).</li>
+        </ul>
+    </section>
+
+    <section id="skills">
+        <h2>Technical Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-tag">Metal Fabrication [cite: 78]</div>
+            <div class="skill-tag">Welding [cite: 77]</div>
+            <div class="skill-tag">Sheet Metal [cite: 76]</div>
+            <div class="skill-tag">Two-Roll Rubber Mills [cite: 81]</div>
+            <div class="skill-tag">Data Analysis [cite: 75]</div>
+            <div class="skill-tag">Problem Solving [cite: 67]</div>
+            <div class="skill-tag">Teamwork [cite: 73]</div>
+            <div class="skill-tag">Java [cite: 10]</div>
+        </div>
+    </section>
 </div>
 
-<!-- ABOUT -->
-<section>
-    <div class="section-title">
-        <h2>About Me</h2>
-    </div>
-
-    <div class="about">
-        <div>
-            <p>
-                I am an Automobile Engineering graduate from <strong>Osmania University</strong>
-                with strong technical exposure to vehicle systems, manufacturing processes,
-                and performance optimization.
-            </p>
-            <p>
-                My experience includes Design of Experiments (DOE), machining optimization
-                of Inconel alloys, electric ATV steering system development for SAE BAJA,
-                and interdisciplinary engineering collaboration.
-            </p>
-        </div>
-
-        <img src="https://images.unsplash.com/photo-1533473359331-0135ef1b58bf">
-    </div>
-</section>
-
-<!-- PROJECTS -->
-<section>
-    <div class="section-title">
-        <h2>Engineering Projects</h2>
-    </div>
-
-    <div class="cards">
-
-        <div class="card">
-            <img src="https://images.unsplash.com/photo-1621252179027-94459d278660">
-            <div class="card-content">
-                <h3>Machining Optimization – Inconel 718</h3>
-                <p>
-                    Optimized cutting speed, feed rate, and depth of cut using DOE to
-                    improve surface finish, reduce tool wear, and lower manufacturing cost
-                    for high-performance superalloy components.
-                </p>
-            </div>
-        </div>
-
-        <div class="card">
-            <img src="https://images.unsplash.com/photo-1605559424843-9e4c228bf1c8">
-            <div class="card-content">
-                <h3>Electric ATV – SAE e-BAJA 2022</h3>
-                <p>
-                    Designed and tested steering system for electric ATV ensuring SAE
-                    compliance, optimized steering geometry, wheel alignment, and
-                    vehicle handling characteristics.
-                </p>
-            </div>
-        </div>
-
-    </div>
-</section>
-
-<!-- SKILLS -->
-<section>
-    <div class="section-title">
-        <h2>Technical Skills</h2>
-    </div>
-
-    <div class="skills">
-        <span>Vehicle Design</span>
-        <span>Steering Systems</span>
-        <span>Suspension</span>
-        <span>Wheel Alignment</span>
-        <span>Manufacturing Processes</span>
-        <span>Metal Fabrication</span>
-        <span>Welding</span>
-        <span>CNC Operations</span>
-        <span>DOE</span>
-        <span>Quality Control</span>
-        <span>CAD Software</span>
-        <span>C++</span>
-        <span>Java</span>
-    </div>
-</section>
-
-<!-- EXPERIENCE -->
-<section>
-    <div class="section-title">
-        <h2>Professional Experience</h2>
-    </div>
-
-    <p>
-        <strong>Lead Technical Recruiter</strong> – Encore Consulting (2022 – Present)<br>
-        Bridging engineering and hiring by evaluating technical skills, aligning
-        recruitment strategies with business goals, and collaborating with leadership.
-    </p>
-
-    <br>
-
-    <p>
-        <strong>Backend Customer Support Executive</strong> – Airtel ATMS (2019 – 2020)<br>
-        Delivered technical support with high customer satisfaction while maintaining
-        accurate documentation and service quality.
-    </p>
-</section>
-<section>
-  <h2>Resume</h2>
-  <p>You can download my resume below:</p>
-  <a href="resume.pdf" download class="btn">Download Resume (PDF)</a>
-</section>
-
-<!-- FOOTER -->
-<footer>
-    📍 Hyderabad, Telangana | 📞 +91-9100548995 | ✉️ wahajivan@gmail.com  
-    <br>© 2026 MD Wahajuddin – Automobile Engineer
-</footer>
+<div class="footer">
+    <p>&copy; 2024 Md Wahajuddin | Developed with passion for Automotive Engineering</p>
+</div>
 
 </body>
 </html>
