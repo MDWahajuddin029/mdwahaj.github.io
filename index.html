@@ -1,10 +1,251 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>My Free Website</title>
+<meta charset="UTF-8">
+<title>MD Wahajuddin | Automobile Engineer</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #0b1120;
+    color: #e5e7eb;
+    line-height: 1.7;
+}
+
+/* HERO */
+.hero {
+    background: linear-gradient(to right, #020617dd, #020617dd),
+    url("https://images.unsplash.com/photo-1503376780353-7e6692767b70") center/cover;
+    padding: 120px 8%;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    color: #38bdf8;
+}
+
+.hero h3 {
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+.hero p {
+    max-width: 600px;
+    margin-top: 20px;
+    color: #cbd5f5;
+}
+
+/* SECTION */
+section {
+    padding: 80px 8%;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-title h2 {
+    font-size: 2.3rem;
+    color: #38bdf8;
+}
+
+/* ABOUT */
+.about {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    align-items: center;
+}
+
+.about img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+/* CARDS */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.card {
+    background: #020617;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 0 25px rgba(56,189,248,0.15);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 25px;
+}
+
+.card-content h3 {
+    color: #38bdf8;
+}
+
+/* SKILLS */
+.skills span {
+    display: inline-block;
+    background: #020617;
+    padding: 10px 16px;
+    margin: 8px;
+    border-radius: 30px;
+    border: 1px solid #38bdf8;
+}
+
+/* FOOTER */
+footer {
+    background: #020617;
+    text-align: center;
+    padding: 25px;
+    color: #94a3b8;
+    font-size: 0.9rem;
+}
+</style>
 </head>
+
 <body>
-  <h1>Hello, I am Your Name</h1>
-  <p>This is my lifetime free personal website.</p>
+
+<!-- HERO -->
+<div class="hero">
+    <h1>MD Wahajuddin</h1>
+    <h3>Automobile Engineer | Automotive Technology Enthusiast</h3>
+    <p>
+        Results-driven Automobile Engineer with hands-on experience in vehicle design,
+        manufacturing, steering systems, DOE optimization, and electric ATV development.
+    </p>
+</div>
+
+<!-- ABOUT -->
+<section>
+    <div class="section-title">
+        <h2>About Me</h2>
+    </div>
+
+    <div class="about">
+        <div>
+            <p>
+                I am an Automobile Engineering graduate from <strong>Osmania University</strong>
+                with strong technical exposure to vehicle systems, manufacturing processes,
+                and performance optimization.
+            </p>
+            <p>
+                My experience includes Design of Experiments (DOE), machining optimization
+                of Inconel alloys, electric ATV steering system development for SAE BAJA,
+                and interdisciplinary engineering collaboration.
+            </p>
+        </div>
+
+        <img src="https://images.unsplash.com/photo-1533473359331-0135ef1b58bf">
+    </div>
+</section>
+
+<!-- PROJECTS -->
+<section>
+    <div class="section-title">
+        <h2>Engineering Projects</h2>
+    </div>
+
+    <div class="cards">
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1621252179027-94459d278660">
+            <div class="card-content">
+                <h3>Machining Optimization – Inconel 718</h3>
+                <p>
+                    Optimized cutting speed, feed rate, and depth of cut using DOE to
+                    improve surface finish, reduce tool wear, and lower manufacturing cost
+                    for high-performance superalloy components.
+                </p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1605559424843-9e4c228bf1c8">
+            <div class="card-content">
+                <h3>Electric ATV – SAE e-BAJA 2022</h3>
+                <p>
+                    Designed and tested steering system for electric ATV ensuring SAE
+                    compliance, optimized steering geometry, wheel alignment, and
+                    vehicle handling characteristics.
+                </p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- SKILLS -->
+<section>
+    <div class="section-title">
+        <h2>Technical Skills</h2>
+    </div>
+
+    <div class="skills">
+        <span>Vehicle Design</span>
+        <span>Steering Systems</span>
+        <span>Suspension</span>
+        <span>Wheel Alignment</span>
+        <span>Manufacturing Processes</span>
+        <span>Metal Fabrication</span>
+        <span>Welding</span>
+        <span>CNC Operations</span>
+        <span>DOE</span>
+        <span>Quality Control</span>
+        <span>CAD Software</span>
+        <span>C++</span>
+        <span>Java</span>
+    </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section>
+    <div class="section-title">
+        <h2>Professional Experience</h2>
+    </div>
+
+    <p>
+        <strong>Lead Technical Recruiter</strong> – Encore Consulting (2022 – Present)<br>
+        Bridging engineering and hiring by evaluating technical skills, aligning
+        recruitment strategies with business goals, and collaborating with leadership.
+    </p>
+
+    <br>
+
+    <p>
+        <strong>Backend Customer Support Executive</strong> – Airtel ATMS (2019 – 2020)<br>
+        Delivered technical support with high customer satisfaction while maintaining
+        accurate documentation and service quality.
+    </p>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    📍 Hyderabad, Telangana | 📞 +91-9100548995 | ✉️ wahajivan@gmail.com  
+    <br>© 2026 MD Wahajuddin – Automobile Engineer
+</footer>
+
 </body>
 </html>
